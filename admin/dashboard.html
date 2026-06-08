@@ -2,182 +2,51 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore Admin - Dashboard</title>
-
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/admin.css">
-    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
 
-    <div class="admin-layout">
-
-        <!-- Sidebar -->
-        <aside class="admin-sidebar">
-
-            <div class="admin-logo">
-                TechStore
-            </div>
-
-            <ul class="admin-menu">
-
-                <li>
-                    <a href="dashboard.html">
-                        Dashboard
-                    </a>
-                </li>
-
-                <li>
-                    <a href="products.html">
-                        Quản Lý Sản Phẩm
-                    </a>
-                </li>
-
-                <li>
-                    <a href="categories.html">
-                        Quản Lý Danh Mục
-                    </a>
-                </li>
-
-                <li>
-                    <a href="activities.html">
-                        Hoạt Động
-                    </a>
-                </li>
-
-                <li>
-                    <a href="statistics.html">
-                        Thống Kê
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../index.html">
-                        Về Website
-                    </a>
-                </li>
-
+<header class="header">
+    <div class="container">
+        <h1 class="logo">Admin Panel</h1>
+        <nav class="nav"> 
+            <ul>
+                <li><a  href="dashboard.html">Dashboard</a></li>
+                <li><a href="activities.html">Hoạt động</a></li>
+                <li><a href="categories.html">Loại sản phẩm</a></li>
+                <li><a href="products.html">Danh sách sản phẩm</a></li>
+                <li><a href="statistics.html">Thống kê</a></li> 
+                <li><a href="../customer/index.html">Home</a></li> 
             </ul>
+        </nav>
+    </div>
+</header>
 
-        </aside>
+<main class="container main-content">
+    <h2>Tổng quan</h2>
 
-        <!-- Content -->
-        <div class="admin-content">
-
-            <!-- Header -->
-            <header class="admin-header">
-
-                <h1>
-                    Dashboard
-                </h1>
-
-            </header>
-
-            <!-- Main -->
-            <main class="admin-main">
-
-                <!-- Statistics -->
-                <div class="statistics-grid">
-
-                    <div class="stat-card">
-
-                        <h4>
-                            Tổng Sản Phẩm
-                        </h4>
-
-                        <p>
-                            120
-                        </p>
-
-                    </div>
-
-                    <div class="stat-card">
-
-                        <h4>
-                            Tổng Danh Mục
-                        </h4>
-
-                        <p>
-                            12
-                        </p>
-
-                    </div>
-
-                    <div class="stat-card">
-
-                        <h4>
-                            Tổng Khách Hàng
-                        </h4>
-
-                        <p>
-                            350
-                        </p>
-
-                    </div>
-
-                    <div class="stat-card">
-
-                        <h4>
-                            Tổng Đơn Hàng
-                        </h4>
-
-                        <p>
-                            580
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <!-- Recent Activities -->
-                <div class="admin-table">
-
-                    <h2>
-                        Hoạt Động Gần Đây
-                    </h2>
-
-                    <table>
-
-                        <tr>
-                            <th>Thời Gian</th>
-                            <th>Người Dùng</th>
-                            <th>Hoạt Động</th>
-                        </tr>
-
-                        <tr>
-                            <td>01/06/2026</td>
-                            <td>Admin</td>
-                            <td>Thêm sản phẩm mới</td>
-                        </tr>
-
-                        <tr>
-                            <td>02/06/2026</td>
-                            <td>Admin</td>
-                            <td>Cập nhật danh mục</td>
-                        </tr>
-
-                        <tr>
-                            <td>03/06/2026</td>
-                            <td>Admin</td>
-                            <td>Kiểm tra đơn hàng</td>
-                        </tr>
-
-                        <tr>
-                            <td>04/06/2026</td>
-                            <td>Admin</td>
-                            <td>Cập nhật báo cáo</td>
-                        </tr>
-
-                    </table>
-
-                </div>
-
-            </main>
-
+    <div class="product-list">
+        <div class="product-card">
+            <h3>Sản phẩm</h3>
+            <p>10 sản phẩm</p>
         </div>
 
+        <div class="product-card">
+            <h3>Danh mục</h3>
+            <p>5 danh mục</p>
+        </div>
+
+        <div class="product-card">
+            <h3>Đơn hàng</h3>
+            <p>20 đơn</p>
+        </div>
     </div>
+</main>
+
+<footer class="footer">
+    <p>Admin Dashboard</p>
+</footer>
 
 </body>
 </html>

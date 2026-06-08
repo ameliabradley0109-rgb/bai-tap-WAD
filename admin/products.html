@@ -2,162 +2,53 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore Admin - Quản Lý Sản Phẩm</title>
-
+    <title>Quản lý sản phẩm</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/admin.css">
-    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
 
-    <div class="admin-layout">
-
-        <!-- Sidebar -->
-        <aside class="admin-sidebar">
-
-            <div class="admin-logo">
-                TechStore
-            </div>
-
-            <ul class="admin-menu">
-
-                <li>
-                    <a href="dashboard.html">
-                        Dashboard
-                    </a>
-                </li>
-
-                <li>
-                    <a href="products.html">
-                        Quản Lý Sản Phẩm
-                    </a>
-                </li>
-
-                <li>
-                    <a href="categories.html">
-                        Quản Lý Danh Mục
-                    </a>
-                </li>
-
-                <li>
-                    <a href="activities.html">
-                        Hoạt Động
-                    </a>
-                </li>
-
-                <li>
-                    <a href="statistics.html">
-                        Thống Kê
-                    </a>
-                </li>
-
-                <li>
-                    <a href="../index.html">
-                        Về Website
-                    </a>
-                </li>
-
+<header class="header">
+    <div class="container">
+        <h1 class="logo">Quản lý sản phẩm</h1>
+        <nav class="nav"> 
+            <ul>
+                <li><a  href="dashboard.html">Dashboard</a></li>
+                <li><a href="activities.html">Hoạt động</a></li>
+                <li><a href="categories.html">Loại sản phẩm</a></li>
+                <li><a href="products.html">Danh sách sản phẩm</a></li>
+                <li><a href="statistics.html">Thống kê</a></li>  
+                <li><a href="../customer/index.html">Home</a></li> 
             </ul>
-
-        </aside>
-
-        <!-- Content -->
-        <div class="admin-content">
-
-            <header class="admin-header">
-
-                <h1>
-                    Quản Lý Sản Phẩm
-                </h1>
-
-            </header>
-
-            <main class="admin-main">
-
-                <!-- Action Bar -->
-                <div class="action-bar">
-
-                    <h2>
-                        Danh Sách Sản Phẩm
-                    </h2>
-
-                    <button class="btn btn-primary">
-                        Thêm Sản Phẩm
-                    </button>
-
-                </div>
-
-                <!-- Product Table -->
-                <div class="admin-table">
-
-                    <table>
-
-                        <tr>
-                            <th>ID</th>
-                            <th>Tên Sản Phẩm</th>
-                            <th>Danh Mục</th>
-                            <th>Giá</th>
-                            <th>Trạng Thái</th>
-                        </tr>
-
-                        <tr>
-                            <td>SP001</td>
-                            <td>Laptop Pro X</td>
-                            <td>Laptop</td>
-                            <td>24.990.000 VNĐ</td>
-                            <td>Đang bán</td>
-                        </tr>
-
-                        <tr>
-                            <td>SP002</td>
-                            <td>Smartphone Max</td>
-                            <td>Điện Thoại</td>
-                            <td>18.490.000 VNĐ</td>
-                            <td>Đang bán</td>
-                        </tr>
-
-                        <tr>
-                            <td>SP003</td>
-                            <td>Tai Nghe Wireless</td>
-                            <td>Âm Thanh</td>
-                            <td>2.590.000 VNĐ</td>
-                            <td>Đang bán</td>
-                        </tr>
-
-                        <tr>
-                            <td>SP004</td>
-                            <td>Smart Watch</td>
-                            <td>Thiết Bị Đeo</td>
-                            <td>4.990.000 VNĐ</td>
-                            <td>Đang bán</td>
-                        </tr>
-
-                        <tr>
-                            <td>SP005</td>
-                            <td>Gaming Laptop G7</td>
-                            <td>Laptop</td>
-                            <td>32.990.000 VNĐ</td>
-                            <td>Hết hàng</td>
-                        </tr>
-
-                        <tr>
-                            <td>SP006</td>
-                            <td>Bluetooth Speaker</td>
-                            <td>Loa</td>
-                            <td>1.990.000 VNĐ</td>
-                            <td>Đang bán</td>
-                        </tr>
-
-                    </table>
-
-                </div>
-
-            </main>
-
-        </div>
-
+        </nav>
     </div>
+</header>
+
+<main class="container main-content">
+    <h2>Danh sách sản phẩm</h2>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <th>ID</th>
+            <th>Tên</th>
+            <th>Giá</th>
+            <th>Hành động</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Sản phẩm 1</td>
+            <td>100.000đ</td>
+            <td>
+                <button>Sửa</button>
+                <button>Xóa</button>
+            </td>
+        </tr>
+    </table>
+</main>
+
+<footer class="footer">
+    <p>Admin</p>
+</footer>
 
 </body>
 </html>
