@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giỏ hàng</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
 
@@ -27,26 +28,36 @@
 <main class="container main-content">
     <h2>Giỏ hàng</h2>
 
-    <table border="1" width="100%" cellpadding="10">
-        <tr>
-            <th>Sản phẩm</th>
-            <th>Giá</th>
-            <th>Số lượng</th>
-            <th>Tổng</th>
-        </tr>
+    <table class="cart-table">
+    <tr>
+        <th>Sản phẩm</th>
+        <th>Giá</th>
+        <th>Số lượng</th>
+        <th>Tổng</th>
+        <th>Hành động</th>
+    </tr>
 
-        <tr>
-            <td>Sản phẩm 1</td>
-            <td>100.000đ</td>
-            <td>1</td>
-            <td>100.000đ</td>
-        </tr>
+    <tr>
+        <td class="product-name">Sản phẩm 1</td>
+        <td>100.000đ</td>
+        <td>
+            <input type="number" value="1" min="1">
+        </td>
+        <td>100.000đ</td>
+        <td>
+            <button class="btn-delete">Xoá</button>
+        </td>
+    </tr>
 
-        <tr>
-            <td colspan="3"><b>Tổng tiền</b></td>
-            <td><b>100.000đ</b></td>
-        </tr>
-    </table>
+    <tr class="total-row">
+        <td colspan="3"><b>Tổng tiền</b></td>
+        <td colspan="2"><b>100.000đ</b></td>
+    </tr>
+</table>
+
+<div class="cart-actions">
+    <button class="btn-checkout">Thanh toán</button>
+</div>
 </main>
 
 <footer class="footer">
