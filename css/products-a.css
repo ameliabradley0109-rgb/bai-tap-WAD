@@ -1,0 +1,65 @@
+.actions {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.btn-add {
+    background: #16a34a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Bảng admin */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ebf2fc;
+}
+
+.admin-table th {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+}
+
+.admin-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.admin-table img {
+    width: 60px;
+    border-radius: 5px;
+}
+
+/* BUTTON */
+.btn-edit {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* STATUS */
+.in-stock {
+    color: green;
+    font-weight: bold;
+}
+
+.out-stock {
+    color: red;
+    font-weight: bold;
+}

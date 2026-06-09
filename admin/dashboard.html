@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 <body>
 
@@ -22,27 +23,71 @@
         </nav>
     </div>
 </header>
-
 <main class="container main-content">
-    <h2>Tổng quan</h2>
+    <h2>Dashboard Admin</h2>
 
-    <div class="product-list">
-        <div class="product-card">
+    
+    <div class="dashboard-cards">
+        <div class="card">
             <h3>Sản phẩm</h3>
-            <p>10 sản phẩm</p>
+            <p>10</p>
         </div>
 
-        <div class="product-card">
+        <div class="card">
             <h3>Danh mục</h3>
-            <p>5 danh mục</p>
+            <p>5</p>
         </div>
 
-        <div class="product-card">
+        <div class="card">
             <h3>Đơn hàng</h3>
-            <p>20 đơn</p>
+            <p>20</p>
+        </div>
+
+        <div class="card">
+            <h3>Doanh thu</h3>
+            <p>5.000.000đ</p>
         </div>
     </div>
+
+    
+    <h3>Đơn hàng gần đây</h3>
+    <table class="admin-table">
+        <tr>
+            <th>Mã đơn</th>
+            <th>Khách hàng</th>
+            <th>Sản phẩm</th>
+            <th>Tổng</th>
+            <th>Trạng thái</th>
+        </tr>
+
+        <tr>
+            <td>#001</td>
+            <td>Nguyễn Văn A</td>
+            <td>Sản phẩm 1</td>
+            <td>100.000đ</td>
+            <td class="status done">Hoàn thành</td>
+        </tr>
+
+        <tr>
+            <td>#002</td>
+            <td>Trần Thị B</td>
+            <td>Sản phẩm 1</td>
+            <td>200.000đ</td>
+            <td class="status pending">Đang xử lý</td>
+        </tr>
+    </table>
+
+    
+    <div class="dashboard-info">
+        <h3>Thông tin hệ thống</h3>
+        <p>- Admin đang hoạt động</p>
+        <p>- Cập nhật lần cuối: 09/06/2026</p>
+        <p>- Trạng thái hệ thống: Bình thường</p>
+    </div>
+
 </main>
+
+
 
 <footer class="footer">
     <p>Admin Dashboard</p>

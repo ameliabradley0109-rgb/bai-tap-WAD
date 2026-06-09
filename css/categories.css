@@ -1,0 +1,17 @@
+.actions {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.btn-add {
+    background: #16a34a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background: #15803d;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Quản lý sản phẩm</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/products-a.css">
 </head>
 <body>
 
@@ -12,7 +13,7 @@
         <h1 class="logo">Quản lý sản phẩm</h1>
         <nav class="nav"> 
             <ul>
-                <li><a  href="dashboard.html">Dashboard</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="activities.html">Hoạt động</a></li>
                 <li><a href="categories.html">Loại sản phẩm</a></li>
                 <li><a href="products.html">Danh sách sản phẩm</a></li>
@@ -26,23 +27,64 @@
 <main class="container main-content">
     <h2>Danh sách sản phẩm</h2>
 
-    <table border="1" width="100%" cellpadding="10">
+    
+    <div class="actions">
+        <button class="btn-add">+ Thêm sản phẩm</button>
+    </div>
+
+    <table class="admin-table">
         <tr>
             <th>ID</th>
+            <th>Ảnh</th>
             <th>Tên</th>
             <th>Giá</th>
+            <th>Tồn kho</th>
+            <th>Trạng thái</th>
             <th>Hành động</th>
         </tr>
 
+        
         <tr>
             <td>1</td>
+            <td><img src="../pictures/meo1.jpg"></td>
             <td>Sản phẩm 1</td>
             <td>100.000đ</td>
+            <td>25</td>
+            <td class="status in-stock">Còn hàng</td>
             <td>
-                <button>Sửa</button>
-                <button>Xóa</button>
+                <button class="btn-edit">Sửa</button>
+                <button class="btn-delete">Xóa</button>
             </td>
         </tr>
+
+        
+        <tr>
+            <td>2</td>
+            <td><img src="../pictures/meo1.jpg"></td>
+            <td>Sản phẩm 2</td>
+            <td>150.000đ</td>
+            <td>10</td>
+            <td class="status in-stock">Còn hàng</td>
+            <td>
+                <button class="btn-edit">Sửa</button>
+                <button class="btn-delete">Xóa</button>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>3</td>
+            <td><img src="../pictures/meo1.jpg"></td>
+            <td>Sản phẩm 3</td>
+            <td>200.000đ</td>
+            <td>0</td>
+            <td class="status out-stock">Hết hàng</td>
+            <td>
+                <button class="btn-edit">Sửa</button>
+                <button class="btn-delete">Xóa</button>
+            </td>
+        </tr>
+
     </table>
 </main>
 
